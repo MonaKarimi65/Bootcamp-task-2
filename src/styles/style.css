@@ -1,0 +1,201 @@
+@import url("../styles/fonts.css");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Vazirmatn';
+    list-style: none;
+}
+
+:root {
+    --primaryColor: #6d28d9;
+    --secondaryColor: #ede9fe;
+    --mainWhite: #fff;
+    --mainBlack: #222;
+    --mainGray: #7c7c7c;
+    --mainSpacing: .1rem;
+    --mainTrasition: all .3s linear;
+    --mainRed: #db2777;
+    --bodyColor: #f6f6f6;
+    --nav-width: 250px;
+}
+
+body {
+    font-family: "Vazirmatn";
+    direction: rtl;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: var(--mainGray);
+}
+
+h2 {
+    padding: 40px 20px 40px 20px;
+    color: var(--mainGray);
+    font-size: 16px;
+}
+
+main {
+    position: relative;
+    width: 70%;
+    margin: auto;
+}
+
+input[type="text"] {
+    height: 35px;
+    width: 300px;
+    border-radius: 10px;
+    padding-right: 24px;
+    border-color: #dbdbdb;
+    border: 1px solid #dbdbdb;
+    color: #2c2c2c;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.search {
+    position: relative;
+}
+
+.search .mdi-magnify {
+    position: absolute;
+    font-size: 20px;
+    left: 5px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    color: var(--mainGray);
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: green;
+}
+
+#sortPrice {
+    display: flex;
+}
+
+.mdi-chevron {
+    position: relative;
+}
+
+.mdi-chevron::after {
+    position: absolute;
+    content: "\F0140";
+    font-family: "Material Design Icons";
+    left: -18px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 15px;
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+}
+
+.mdi-chevron.up::after {
+    /*left: 0;
+    */
+    transform: rotate(180deg);
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+}
+
+.TransactionsBtn {
+    background-color: #009baf !important;
+    color: #fff !important;
+    padding: 15px 80px;
+    font-size: 18px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    outline: none;
+    border: none;
+    display: block;
+    margin: auto;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    border: 1px solid transparent;
+}
+
+.TransactionsBtn:hover {
+    color: #009baf !important;
+    border: 1px solid #009baf;
+    background-color: #fff !important;
+}
+
+.title {
+    padding-bottom: 60px;
+}
+
+.tableList {
+    background: #fff;
+    border: 1px solid #eae0e0;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+    padding: 20px 0 50px 0;
+}
+
+.table {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+
+.table> :not(caption)>*>* {
+    padding: 1.5rem 5rem !important;
+}
+
+.table> :not(:last-child)> :last-child>* {
+    border-bottom-color: #eae0e0;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.table thead {
+    background: #f7f7f7;
+}
+
+.table thead tr th {
+    color: var(--mainGray);
+}
+
+.tableBody tr {
+    border: 1px solid #f8f8f8;
+}
